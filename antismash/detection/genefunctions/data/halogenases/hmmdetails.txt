@@ -1,0 +1,2 @@
+Flavin-dependent	HALOGENASES	350	/home/szenei/antismash_tailoring_enzymes/antismash/antismash/detection/genefunctions/data/halogenases/trp_5_v2.hmm
+Flavin-dependent	HALOGENASES	770	/home/szenei/antismash_tailoring_enzymes/antismash/antismash/detection/genefunctions/data/halogenases/trp_6_7_v2.hmm

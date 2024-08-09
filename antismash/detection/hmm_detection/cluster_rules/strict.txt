@@ -763,3 +763,12 @@ RULE hydroxytropolone
     CONDITIONS 4HBT_2 and AMP-binding and
                cds(Acyl-CoA_dh_N and Acyl-CoA_dh_M and Acyl-CoA_dh_1) and
                cds(TPP_enzyme_N and TPP_enzyme_C)
+
+RULE scytonemin-monomer
+    CATEGORY other
+    DESCRIPTION scytonemin monomer moiety
+    # see DOI: 10.1039/C4GC00118D
+    EXAMPLE NCBI CP001037.1 1535003-1539292 scytonemin monomer
+    CUTOFF 2
+    NEIGHBOURHOOD 5
+    CONDITIONS PTHR18968 and PTHR42722 and NF035924_1

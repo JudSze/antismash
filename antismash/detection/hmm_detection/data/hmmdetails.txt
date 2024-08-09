@@ -366,3 +366,6 @@ AesA	N-((2S)-2-amino-2-carboxyethyl)-L-glutamate dehydrogenase involved in APCA 
 AesB	Pyridoxal-dependent decarboxylase involved in APCA biosynthesis	400	AesB.hmm
 AesC	N-(2-amino-2-carboxyethyl)-L-glutamate synthase involved in APCA biosynthesis	420	AesC.hmm
 4HBT_2	Hotdog fold Thioesterase-like superfamily	25	PF13279.hmm
+NF035924_1	scytonemin biosynthesis cyclase-decarboxylase ScyC	400	NF035924_1.hmm
+PTHR42722	LEUCINE DEHYDROGENASE	100	PTHR42722.hmm
+PTHR18968	THIAMINE PYROPHOSPHATE ENZYMES	100	PTHR18968.hmm

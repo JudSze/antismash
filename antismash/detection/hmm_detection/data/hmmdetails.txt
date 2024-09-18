@@ -376,4 +376,7 @@ Thioesterase	Thioesterase domain	26	PF00975.hmm
 delta9_cd03505	delta9 desaturase	22	delta9_cd03505.hmm
 delta12_cd03507	delta12 desaturase	22	delta12_cd03507.hmm
 FAAL_cd05931	FAAL	20	FAAL_cd05931.hmm
+PTHR43459	enoyl-CoA hydratase	23	PTHR43459.hmm
 ferritin	ferritin	23	ferritin.hmm
+nonK_homologs	nonK	50	nonK_homologs.hmm
+nonJ_homologs	nonJ	50	nonJ_homologs.hmm

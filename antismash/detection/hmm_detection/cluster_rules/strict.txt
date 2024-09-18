@@ -791,6 +791,15 @@ RULE isocyanide-nrp
     NEIGHBOURHOOD 25
     CONDITIONS DIT1_PvcA and minimum(2, [AMP-binding, PP-binding, Transferase])
 
+RULE nonactin
+    CATEGORY other
+    DESCRIPTION nonactin
+    # see DOI: 10.1126/science.1073175 and doi.org/10.1111/j.1574-6968.2000.tb08953.x and 10.1128/aac.43.7.1662
+    EXAMPLE NCBI AF074603.2 249-15270
+    CUTOFF 50
+    NEIGHBOURHOOD 50
+    CONDITIONS PTHR43459 and nonK_homologs and nonJ_homologs
+
 RULE hydrogen-cyanide
     CATEGORY other
     DESCRIPTION hydrogen cyanide

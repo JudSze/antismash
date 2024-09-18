@@ -563,6 +563,16 @@ RULE melanin
     NEIGHBOURHOOD 5
     CONDITIONS melC
 
+RULE HPQ
+    CATEGORY other
+    DESCRIPTION HPQ
+    # described in doi.org/10.1128/jb.187.23.8149-8155.2005
+    EXAMPLE NCBI UAVD01000021.1 1954-4327 HPQ
+    CUTOFF 20
+    NEIGHBOURHOOD 5
+    CONDITIONS (Chal_sti_synt_N or Chal_sti_synt_C) and P450mel
+
+
 RULE oligosaccharide
     CATEGORY saccharide
     DESCRIPTION Oligosaccharide

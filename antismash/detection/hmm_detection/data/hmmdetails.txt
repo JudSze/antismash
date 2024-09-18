@@ -118,6 +118,7 @@ nikO	NikO-like enolpyruvyl transferase	400	nikO.hmm
 MoeO5	MoeO5-like prenyl-3-phosphoglycerate synthase	65	MoeO5.hmm
 moeGT	Phosphoglycolipid glycosyltransferase	100	moeGT.hmm
 melC	MelC-like melanin synthase	40	melC.hmm
+P450mel	cd00302	50	P450mel.hmm
 NAD_binding_4	NAD-binding domain 4	40	NAD_binding_4.hmm
 LmbU	LmbU-like protein	50	LmbU.hmm
 mmyO	MmyO-like protein	500	mmyO.hmm

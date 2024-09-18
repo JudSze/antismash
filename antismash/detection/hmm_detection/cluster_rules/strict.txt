@@ -831,11 +831,11 @@ RULE polyyne
     CONDITIONS (Rubredoxin or ferritin) and (PP-binding_2 or PP-binding) and delta9_cd03505
                 and delta12_cd03507 and FAAL_cd05931 and 4HBT_2
 
-RULE scytonemin-monomer
+RULE symmetrical-indole-alkaloid
     CATEGORY other
     DESCRIPTION scytonemin monomer moiety
     # see DOI: 10.1039/C4GC00118D
     EXAMPLE NCBI CP001037.1 1535003-1539292 scytonemin monomer
-    CUTOFF 2
+    CUTOFF 5
     NEIGHBOURHOOD 5
     CONDITIONS PTHR18968 and PTHR42722 and NF035924_1

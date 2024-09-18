@@ -368,8 +368,13 @@ AesB	Pyridoxal-dependent decarboxylase involved in APCA biosynthesis	400	AesB.hm
 AesC	N-(2-amino-2-carboxyethyl)-L-glutamate synthase involved in APCA biosynthesis	420	AesC.hmm
 4HBT_2	Thioesterase-like superfamily	25	PF13279.hmm
 NF035924_1	scytonemin biosynthesis cyclase-decarboxylase ScyC	400	NF035924_1.hmm
-PTHR42722	LEUCINE DEHYDROGENASE	100	PTHR42722.hmm
-PTHR18968	THIAMINE PYROPHOSPHATE ENZYMES	100	PTHR18968.hmm
+PTHR42722	LEUCINE DEHYDROGENASE	60	PTHR42722.hmm
+PTHR18968	THIAMINE PYROPHOSPHATE ENZYMES	12	PTHR18968.hmm
+PTHR11474	TYROSINASE FAMILY MEMBER	60	PTHR11474.hmm
+TIGR03389_1	laccase	558	TIGR03389_1.hmm
+TIGR01263_1	4-hydroxyphenylpyruvate dioxygenase	277	TIGR01263_1.hmm
+HmgA_C	Homogentisate 1,2-dioxygenase C-terminal	21	HmgA_C.hmm
+HmgA_N	Homogentisate 1,2-dioxygenase N-terminal	20	HmgA_N.hmm
 Rubredoxin	Rubredoxin	23	PF00301.hmm
 PP-binding_2	Acyl-carrier	10	PF14573.hmm
 Thioesterase	Thioesterase domain	26	PF00975.hmm

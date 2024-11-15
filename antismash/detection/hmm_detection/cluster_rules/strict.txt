@@ -671,6 +671,25 @@ RULE pyrrolidine
     NEIGHBOURHOOD 10
     CONDITIONS Glycos_transf_1 and Alpha-amylase and Aminotran_3 and DXP_synthase_N
 
+RULE polyyne
+    CATEGORY other
+    DESCRIPTION polyyne
+    # see DOI: doi.org/10.1039/D3NP00059A and doi.org/10.1038/s42003-022-03409-6
+    EXAMPLE NCBI GCF_000940805.1 5097502-5110027 ergoynes #BGC0000892 and BGC0001897
+    CUTOFF 5
+    NEIGHBOURHOOD 10
+    CONDITIONS (Rubredoxin or ferritin) and (PP-binding_2 or PP-binding) and delta9_cd03505
+                and delta12_cd03507 and FAAL_cd05931 and 4HBT_2
+
+RULE symmetrical-indole-alkaloid
+    CATEGORY other
+    DESCRIPTION scytonemin monomer moiety
+    # see DOI: 10.1039/C4GC00118D
+    EXAMPLE NCBI CP001037.1 1535003-1539292 scytonemin monomer
+    CUTOFF 5
+    NEIGHBOURHOOD 5
+    CONDITIONS PTHR18968 and PTHR42722 and NF035924_1
+
 RULE crocagin
     CATEGORY RiPP
     DESCRIPTION Crocagin-like cluster

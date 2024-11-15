@@ -782,3 +782,22 @@ RULE hydroxytropolone
     CONDITIONS 4HBT_2 and AMP-binding and
                cds(Acyl-CoA_dh_N and Acyl-CoA_dh_M and Acyl-CoA_dh_1) and
                cds(TPP_enzyme_N and TPP_enzyme_C)
+
+RULE polyyne
+    CATEGORY other
+    DESCRIPTION polyyne
+    # see DOI: doi.org/10.1039/D3NP00059A and doi.org/10.1038/s42003-022-03409-6
+    EXAMPLE NCBI GCF_000940805.1 5097502-5110027 ergoynes #BGC0000892 and BGC0001897
+    CUTOFF 10
+    NEIGHBOURHOOD 10
+    CONDITIONS (Rubredoxin or ferritin) and (PP-binding_2 or PP-binding) and delta9_cd03505
+                and delta12_cd03507 and FAAL_cd05931 and (4HBT_2 or Thioesterase or PF00561)
+
+RULE symmetrical-indole-alkaloid
+    CATEGORY other
+    DESCRIPTION scytonemin monomer moiety
+    # see DOI: 10.1039/C4GC00118D
+    EXAMPLE NCBI CP001037.1 1535003-1539292 scytonemin monomer
+    CUTOFF 5
+    NEIGHBOURHOOD 5
+    CONDITIONS PTHR18968 and PTHR42722 and NF035924_1

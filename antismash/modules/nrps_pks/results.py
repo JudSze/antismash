@@ -7,6 +7,8 @@ from collections import defaultdict
 import logging
 from typing import Any, Dict, List, Optional
 
+from rdkit import Chem
+
 from antismash.common.module_results import ModuleResults
 from antismash.common.secmet import Module, Record
 from antismash.common.secmet.qualifiers import NRPSPKSQualifier
@@ -121,6 +123,7 @@ class NRPS_PKS_Results(ModuleResults):
         self.consensus: Dict[str, str] = {}  # domain name -> consensus
         self.region_predictions: Dict[int, List[CandidateClusterPrediction]] = defaultdict(list)
         self.consensus_transat: Dict[str, str] = {}
+        self.chemical_structure: Chem.rdchem.Mol
 
     def add_method_results(self, method: str, results: Dict[str, Prediction]) -> None:
         """ Add per-domain results for a single prediction method

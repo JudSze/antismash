@@ -18,4 +18,4 @@ gbk_record = record.Record.from_genbank("NC_003888.3.region021/DQ983361.1.region
 domain_res = nrps_pks.run_on_record(gbk_record, None, options)
 
 chemical_structure = specific_analysis(gbk_record, domain_res, options)
-chemical_structure.chemical_structure
+

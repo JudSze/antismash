@@ -19,7 +19,7 @@ from .orderfinder import analyse_biosynthetic_order
 from .parsers import calculate_consensus_prediction
 from .results import NRPS_PKS_Results
 from .substrates import run_pks_substr_spec_predictions
-from .cheminformatics import smiles_to_rd
+from antismash.modules.cheminformatics import smiles_to_rd
 
 from .nrpys import run_nrpys
 

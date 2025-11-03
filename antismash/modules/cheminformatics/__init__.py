@@ -30,7 +30,7 @@ def get_arguments() -> ModuleArgs:
     """
     # construct the argument group, with section and prefix
     # the prefix will be enforced for all command line options for the module
-    args = ModuleArgs('Additional analysis', 'chemical-structure', enabled_by_default=True)
+    args = ModuleArgs('Additional analysis', 'chemicalstructure', enabled_by_default=True)
 
     return args
 
@@ -70,11 +70,11 @@ def is_enabled(options: ConfigType) -> bool:
     """
     # the logic here depends on which command options you've created
     # using the example above, this is as simple as returning the toggle
-    return options.template_analysis
+    return options
 
 
 def regenerate_previous_results(previous: Dict[str, Any], record: Record,
-                                _options: ConfigType) -> Optional[TemplateAnalysisResults]:
+                                _options: ConfigType):
     """ Regenerate the previous results from JSON format.
 
         Arguments:
@@ -104,9 +104,9 @@ def run_on_record(record: Record, results: NRPS_PKS_Results, options: ConfigType
             an instance of the module's ModuleResults implementation
     """
     # after a safety check that the results are the correct ones for the record, return them
-    if isinstance(results, TemplateAnalysisResults) and results.record_id == record.id:
+    if isinstance(results, NRPS_PKS_Results) and results.record_id == record.id:
         return results
     # otherwise run the actual analysis and generate a results instance with your analysis results
-    results = TemplateAnalysisResults(record.id, options.cutoff)
+    results = NRPS_PKS_Results(record.id)
     # and return it
     return results

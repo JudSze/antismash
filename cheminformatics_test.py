@@ -12,7 +12,7 @@ args = ["--minimal",
 
 options = build_config(args, isolated=True, modules=get_all_modules())
 
-run_antismash("DQ983361.1.gb", options)
+run_antismash("JF752342.1.gb", options)
 gbk_record = record.Record.from_genbank("NC_003888.3.region021/DQ983361.1.region001.gbk")[0]
 domain_res = nrps_pks.run_on_record(gbk_record, None, options)
 

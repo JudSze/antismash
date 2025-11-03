@@ -74,6 +74,6 @@ def specific_analysis(record: Record, results: NRPS_PKS_Results, options: Config
         region = candidate_cluster.parent
         chemical_structure = Chem.MolFromSmiles(prediction.smiles)
         assert isinstance(region, Region), type(region)
+        results.chemical_structure = chemical_structure
         results.region_predictions[region.get_region_number()].append(prediction)
-        results.chemical_structure=chemical_structure
     return results

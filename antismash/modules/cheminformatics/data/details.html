@@ -1,0 +1,67 @@
+<!--
+Template for displaying detailed information below the cluster visualization
+This appears in the main details section of the region view
+-->
+
+<div class="details-section">
+    <h3>Structure Analysis Details</h3>
+    
+    <!-- Structure visualization -->
+    <div class="structure-container">
+        <h4>Predicted Structure</h4>
+        {{ structure_svg|safe }}
+    </div>
+    
+    <!-- Structure information table -->
+    <div class="structure-info">
+        <h4>Structure Information</h4>
+        <table class="table table-condensed">
+            <tbody>
+                <!-- TODO: Add your structure properties -->
+                <tr>
+                    <td class="labels">SMILES:</td>
+                    <td>{{ results.smiles }}</td>
+                </tr>
+                <tr>
+                    <td class="labels">Molecular Formula:</td>
+                    <td>{{ results.formula }}</td>
+                </tr>
+                <tr>
+                    <td class="labels">Molecular Weight:</td>
+                    <td>{{ results.molecular_weight }} g/mol</td>
+                </tr>
+                <!-- Add more properties as needed -->
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Analysis results -->
+    <div class="analysis-results">
+        <h4>Analysis Results</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- TODO: Iterate through your analysis results -->
+                {% for result in results.analysis_data %}
+                <tr>
+                    <td>{{ result.property_name }}</td>
+                    <td>{{ result.value }}</td>
+                    <td>{{ result.description }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Optional: Additional sections -->
+    <div class="additional-info">
+        <h4>Additional Information</h4>
+        <p>{{ results.additional_notes }}</p>
+    </div>
+</div>

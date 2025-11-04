@@ -28,7 +28,7 @@ gbk_record = secmet.record.Record.from_genbank(genbank)[0]
 domain_res = nrps_pks.run_on_record(gbk_record, None, options)
 
 chemical_structure = specific_analysis(gbk_record, domain_res, options)
-
+type(chemical_structure)
 for prediction in chemical_structure.region_predictions[1]:
     structure_prediction.smiles_to_objects(prediction.smiles)
 

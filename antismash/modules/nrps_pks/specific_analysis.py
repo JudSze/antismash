@@ -8,6 +8,8 @@ In-depth analysis and annotation of NRPS/PKS regions.
 import logging
 from typing import List
 
+from rdkit import Chem
+
 from antismash.common.secmet import Record, CDSFeature, Region
 from antismash.config import ConfigType
 from antismash.detection.nrps_pks_domains import ModularDomain
@@ -17,6 +19,7 @@ from .orderfinder import analyse_biosynthetic_order
 from .parsers import calculate_consensus_prediction
 from .results import NRPS_PKS_Results
 from .substrates import run_pks_substr_spec_predictions
+from antismash.modules.cheminformatics import smiles_to_rd
 
 from .nrpys import run_nrpys
 
@@ -69,6 +72,8 @@ def specific_analysis(record: Record, results: NRPS_PKS_Results, options: Config
     for prediction in candidate_cluster_predictions:
         candidate_cluster = record.get_candidate_cluster(prediction.candidate_cluster_number)
         region = candidate_cluster.parent
+        chemical_structure = Chem.MolFromSmiles(prediction.smiles)
         assert isinstance(region, Region), type(region)
+        results.chemical_structure = chemical_structure
         results.region_predictions[region.get_region_number()].append(prediction)
     return results
